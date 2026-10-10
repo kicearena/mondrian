@@ -1,15 +1,11 @@
 {
   "name": "@kicearena/mondrian",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "type": "module",
   "description": "Deterministic Mondrian panel geometry, colors and keyed placement.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kicearena/mondrian.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "public"
   },
   "files": [
     "dist",

@@ -3,7 +3,7 @@
 A tiny TypeScript engine for deterministic Mondrian compositions and stable keyed placement.
 
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Packages](https://img.shields.io/badge/package-0.1.2-24292f.svg)](https://github.com/kicearena/mondrian/pkgs/npm/mondrian)
+[![npm version](https://img.shields.io/npm/v/%40kicearena%2Fmondrian)](https://www.npmjs.com/package/@kicearena/mondrian)
 
 ![Mondrian component showcase](docs/images/preview.png)
 
@@ -28,15 +28,12 @@ bun run demo
 
 ## Install
 
-Published on **GitHub Packages**. This registry requires authentication even for public packages. Set a `read:packages` token in `NODE_AUTH_TOKEN` and add this project `.npmrc` (never store the token itself):
-
-```ini
-@kicearena:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}
-```
+Install directly from the public npm registry:
 
 ```sh
-bun add --exact @kicearena/mondrian@0.1.2
+npm install --save-exact @kicearena/mondrian@0.1.3
+# or
+bun add --exact @kicearena/mondrian@0.1.3
 ```
 
 ```ts
