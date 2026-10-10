@@ -1,6 +1,6 @@
 {
   "name": "@kicearena/mondrian",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "Deterministic Mondrian panel geometry, colors and keyed placement.",
   "repository": {
@@ -13,7 +13,10 @@
   },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE",
+    "docs/api.md",
+    "docs/images"
   ],
   "exports": {
     ".": {
@@ -24,13 +27,20 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "check": "tsc --noEmit -p tsconfig.json && prettier --check ."
+    "check": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.demo.json && prettier --check .",
+    "demo": "vite --config vite.demo.config.ts --host 127.0.0.1",
+    "demo:build": "vite build --config vite.demo.config.ts"
   },
   "devDependencies": {
     "typescript": "5.9.3",
-    "vitest": "4.1.8",
+    "vitest": "4.1.11",
     "@types/node": "25.9.1",
-    "prettier": "3.8.4"
+    "prettier": "3.8.4",
+    "vite": "7.3.5"
   },
-  "license": "UNLICENSED"
+  "license": "MIT",
+  "homepage": "https://github.com/kicearena/mondrian#readme",
+  "bugs": {
+    "url": "https://github.com/kicearena/mondrian/issues"
+  }
 }
